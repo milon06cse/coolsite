@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="src/bootstrap.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+  <script src="src/jquery.min.js"></script>
+  <script src="src/bootstrap.min.js"></script>
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 30%;
+      height:25%;
+      margin: auto;
+  }
+  </style>
+</head>
+<body>
+    <!-- Bootstrap Menu building -->
+    <div class="navbar">
+        <div class="navbar-inner" style="background-color: whitesmoke; border-style: ridge">
+            <ul class="nav nav-tabs">
+                <li><a href="#">ProjectName</a></li>
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown Menu<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">SubMenu 1</a></li>
+                        <li><a href="#">SubMenu 2</a></li>
+                        <li><a href="#">SubMenu 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About </a></li>
+                <li><a href="#">Contract Us </a></li>
+            </ul>
+        <div style="text-align:right;font-size:large;font-weight:bold">Institute  Name</div>
+        </div>        
+    </div>
+
+<div class="container-fluid" style="font-weight:bold;width:96.6%">
+..It's bootstrap guys....
+<div class="container">
+        <br>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox" style="background-color:white">
+                <div class="item carousel-caption active">
+                    <h3 style="color: black; background-color: white">first image</h3>
+                    <img src="images/1.jpg" alt="first image">
+                    <p style="color: white; background-color: darkcyan">The atmosphere in Chania has a touch of Florence and Venice.</p>
+                </div>
+                <div class="item carousel-caption">
+                    <h3 style="color: black">second image</h3>
+                    <img src="images/2.jpg" alt="second image" width="30%" height="30%">
+                    <p style="color: black">The atmosphere in Chania has a touch of Florence and Venice.</p>
+                </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span>
+    </a><a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span>
+    </a>
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row-fluid" style="table-layout: auto">
+            <div class="span2 table-fluid" style="background-color: #DDE0E0; border-color: red;text-align:center">
+                First Part
+                <div>
+                    <h5>Header 1</h5>Body 1
+                </div>
+                <div><h5>Header 2</h5>Body 2</div>
+                <div><h5>Header 3</h5>Body 3</div>
+            </div>
+            <div style="text-align: center" class="span8">
+                 <table class="table table-header table-hover table-bordered">
+                    <caption style="text-align:left;font-size:x-large;font-stretch:wider">Teacher List</caption>
+                    <thead>
+                        <th>SL</th>
+                        <th>Name</th>
+                        <th>কোন ক্লাস এ কোন বিষয় পড়ায়</th>
+                        <th>যোগ্যতা</th>
+                        <th>ফুটো</th>
+                    </thead>
+                    <tbody class="nth-child">
+                        <tr>
+                            <td class="nth-child">1</td>
+                            <td>Mst Madam</td>
+                            <td>কৃষি</td>
+                            <td>S.S.C</td>
+                            <td>ছবি নাই</td>
+                        </tr>
+                        <tr>
+                            <td class="nth-child">2</td>
+                            <td>Mizanur</td>
+                            <td>class VI: bangla class IX: উচ্চ তর শারিরিক বিদ্যা</td>
+                            <td>বিএড</td>
+                            <td>ছবি নাই</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="span2 table-fluid" style="background-color: #DDE0E0; border-color: red;text-align:left">
+                Last part
+                           
+                <form style="font-size:large">
+                    <fieldset>
+                    <table border="1" class="table-hover table-fluid table-bordered">
+                        <header class="table-header" style="text-align: center; color: green"><strong>Use Your Accoount</strong></header>
+                        
+                        <tr>
+                            <input type="text" style="border-color: green; width: 90%;height:90%" placeholder="User Id">
+                        </tr>
+                        
+                        <tr>
+                            <input type="password" style="border-color: green; width: 90%;height:90%" placeholder="Passeword">
+                        </tr>
+                        <div class="row-fluid">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Remaind Me</label>
+                            <button type="button" class="btn-success" style="">Login</button>
+                        </div>
+                    </table>
+                        </fieldset>
+                    <br />
+                    <div>
+                        Yoour next pan
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
